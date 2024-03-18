@@ -1,6 +1,7 @@
 import React from 'react'
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 import ProgressDetailsBox from './Progress-details'
+import RightDownArrow from "/public/right-down-arrow.png"
 
 const ShowData = () => {
     return (
@@ -11,7 +12,7 @@ const ShowData = () => {
                         <p className={`bg-[#3552AA] text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]`}>B2C</p>
                         <div className='flex items-center'>
                             <div className='flex justify-center'>
-                                <img src="public/right-down-arrow.png" className={`w-[150px]`} width={800} alt="#" />
+                                <img src={RightDownArrow} className={`w-[150px]`} width={800} alt="#" />
                             </div>
                         </div>
                     </TooltipTrigger>
