@@ -4,8 +4,8 @@ import {
 } from "@/components/ui/tooltip"
 import ShowData from './components/Show-data';
 import ThreeArrows from './components/Three-arrow';
-import GroupImage from "../public/arrows-group.png";
-import TreeArrowGroup from "../public/three-arrows-group.png";
+import GroupImage from "/arrows-group.png";
+import TreeArrowGroup from "/three-arrows-group.png";
 
 const HomePage = () => {
     const [hide, setHide] = useState(`hidden`);

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip'
 import ProgressDetailsBox from './Progress-details'
-import RightDownArrow from "/public/right-down-arrow.png"
+import RightDownArrow from "/right-down-arrow.png"
 
 const ShowData = () => {
     return (
