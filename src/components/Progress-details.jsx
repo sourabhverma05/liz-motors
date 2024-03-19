@@ -4,7 +4,7 @@ import { Progress } from './ui/progress'
 const ProgressDetailsBox = () => {
     return (
         <>
-            <div className='bg-[#f6f2ee] flex flex-col w-[500px] h-[20%] text-start px-[50px] py-[40px] gap-[10px]'>
+            <div className='bg-[#f6f2ee] flex flex-col w-[500px] h-[20%] text-start px-[50px] py-[40px] gap-[10px] m-0'>
                 <div className='flex flex-col'>
                     <div className='flex flex-col gap-4'>
                         <div className='flex justify-evenly gap-9 text-sm mb-[-13px]'>
