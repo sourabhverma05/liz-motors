@@ -67,7 +67,7 @@ const HomePage = () => {
                                 className='text-black focus:text-white bg-[#3552aa] hover:bg-[#4768cd] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 External
                             </Button>
-                            {external && <div className={`${external} absolute left-[145px] top-[-14px]`}>
+                            {external && <div className={`${external} absolute left-[145px] top-[-14px]` }>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
