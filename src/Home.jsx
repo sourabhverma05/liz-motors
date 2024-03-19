@@ -26,7 +26,7 @@ const HomePage = () => {
                 <div className='flex'>
                     <img src={GroupImage} className='h-[500px] my-auto' alt="#" />
                     <div className="flex flex-col gap-[49px] justify-center">
-                        <div className='flex items-center w-[300px]'>
+                        <div className={`flex items-center w-[300px]`}>
                             <p className='bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>Research</p>
                             <div className='flex items-center'>
                                 <img src={TreeArrowGroup} className='w-[200px] h-[70px]' alt="#" />
