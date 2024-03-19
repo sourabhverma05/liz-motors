@@ -2,11 +2,11 @@ import React, { useState } from 'react'
 import {
     TooltipProvider,
 } from "@/components/ui/tooltip"
-import ShowData from './components/show-data';
 import ThreeArrows from './components/three-arrow';
 import GroupImage from "/arrows-group.png";
 import TreeArrowGroup from "/three-arrows-group.png";
 import { Button } from './components/ui/button';
+import B2CItems from './components/b2c-items';
 
 const HomePage = () => {
     const [external, setExternal] = useState(`hidden`);
@@ -67,9 +67,12 @@ const HomePage = () => {
                                 className='text-black focus:text-white bg-[#3552aa] hover:bg-[#4768cd] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 External
                             </Button>
-                            {external && <div className={`${external} absolute left-[145px] top-[-14px]` }>
+                            {external && <div className={`${external} absolute left-[145px] top-[-14px]`}>
                                 <ThreeArrows />
-                                <ShowData />
+                                <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                    <B2CItems />
+                                    <B2CItems />
+                                </div>
                             </div>}
                         </div>
 
@@ -80,7 +83,10 @@ const HomePage = () => {
                             </Button>
                             {internal && <div className={`${internal} absolute left-[145px] top-[-13px]`}>
                                 <ThreeArrows />
-                                <ShowData />
+                                <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                    <B2CItems />
+                                    <B2CItems />
+                                </div>
                             </div>}
                         </div>
 
@@ -92,7 +98,10 @@ const HomePage = () => {
                                 </Button>
                                 {PRD && <div className={`${PRD} absolute left-[145px] top-[-12px]`}>
                                     <ThreeArrows />
-                                    <ShowData />
+                                    <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                        <B2CItems />
+                                        <B2CItems />
+                                    </div>
                                 </div>}
                             </div>
                         </div>
@@ -104,7 +113,10 @@ const HomePage = () => {
                             </Button>
                             {specs && <div className={`${specs} absolute left-[145px] top-[-12px]`}>
                                 <ThreeArrows />
-                                <ShowData />
+                                <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                    <B2CItems />
+                                    <B2CItems />
+                                </div>
                             </div>}
                         </div>
 
@@ -115,7 +127,10 @@ const HomePage = () => {
                             </Button>
                             {hardware && <div className={`${hardware} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
-                                <ShowData />
+                                <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                    <B2CItems />
+                                    <B2CItems />
+                                </div>
                             </div>}
                         </div>
 
@@ -126,7 +141,10 @@ const HomePage = () => {
                             </Button>
                             {software && <div className={`${software} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
-                                <ShowData />
+                                <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                    <B2CItems />
+                                    <B2CItems />
+                                </div>
                             </div>}
                         </div>
 
@@ -137,7 +155,10 @@ const HomePage = () => {
                             </Button>
                             {material && <div className={`${material} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
-                                <ShowData />
+                                <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                    <B2CItems />
+                                    <B2CItems />
+                                </div>
                             </div>}
                         </div>
 
@@ -148,7 +169,10 @@ const HomePage = () => {
                             </Button>
                             {production && <div className={`${production} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
-                                <ShowData />
+                                <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                    <B2CItems />
+                                    <B2CItems />
+                                </div>
                             </div>}
                         </div>
 
@@ -159,7 +183,10 @@ const HomePage = () => {
                             </Button>
                             {online && <div className={`${online} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
-                                <ShowData />
+                                <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                    <B2CItems />
+                                    <B2CItems />
+                                </div>
                             </div>}
                         </div>
 
@@ -170,7 +197,10 @@ const HomePage = () => {
                             </Button>
                             {dealearship && <div className={`${dealearship} absolute left-[145px] bottom-[52px]`}>
                                 <ThreeArrows />
-                                <ShowData />
+                                <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
+                                    <B2CItems />
+                                    <B2CItems />
+                                </div>
                             </div>}
                         </div>
 
