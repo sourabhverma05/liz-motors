@@ -4,7 +4,7 @@ import {
 } from "@/components/ui/tooltip"
 import GroupImage from "/arrows-group.png";
 import TreeArrowGroup from "/three-arrows-group.png";
-import { Button } from './components/ui/button';
+import { Button } from '/src/components/ui/button';
 import B2CItems from './components/b2c-items';
 import ThreeArrow from "/three-arrows-group.png"
 
