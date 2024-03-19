@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import {
     TooltipProvider,
 } from "@/components/ui/tooltip"
-import ShowData from './components/Show-data';
-import ThreeArrows from './components/Three-arrow';
+import ShowData from './components/show-data';
+import ThreeArrows from './components/three-arrow';
 import GroupImage from "/arrows-group.png";
 import TreeArrowGroup from "/three-arrows-group.png";
+import { Button } from './components/ui/button';
 
 const HomePage = () => {
     const [external, setExternal] = useState(`hidden`);
@@ -20,11 +21,11 @@ const HomePage = () => {
     const [dealearship, setDealearship] = useState(`hidden`);
 
     return (
-        <div className='w-full my-8'>
+        <div className='w-full my-5'>
             <TooltipProvider>
                 <div className='flex'>
                     <img src={GroupImage} className='h-[500px] my-auto' alt="#" />
-                    <div className="flex flex-col gap-[50px] justify-center">
+                    <div className="flex flex-col gap-[49px] justify-center">
                         <div className='flex items-center w-[300px]'>
                             <p className='bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>Research</p>
                             <div className='flex items-center'>
@@ -60,24 +61,24 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-y-[15px]'>
+                    <div className='flex flex-col gap-y-[20px]'>
                         <div className='flex items-center w-[300px] hover:w-[300px] relative'>
-                            <button onClick={() => setExternal(!external) ? setExternal(external) : setExternal(!external)}
-                                className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                            <Button onClick={() => setExternal(!external) ? setExternal(external) : setExternal(!external)}
+                                className='text-black focus:text-white bg-[#3552aa] hover:bg-[#4768cd] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 External
-                            </button>
-                            {external && <div className={`${external} absolute left-[145px] top-[-10px]`}>
+                            </Button>
+                            {external && <div className={`${external} absolute left-[145px] top-[-14px]`}>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
                         </div>
 
                         <div className='flex items-center w-[300px] hover:w-[300px] relative'>
-                            <button onClick={() => setInternal(!internal) ? internal : setInternal(!internal)}
-                                className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                            <Button onClick={() => setInternal(!internal) ? internal : setInternal(!internal)}
+                                className='text-black focus:text-white bg-[#3552aa] hover:bg-[#4768cd] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 Internal
-                            </button>
-                            {internal && <div className={`${internal} absolute left-[145px] top-[-10px]`}>
+                            </Button>
+                            {internal && <div className={`${internal} absolute left-[145px] top-[-13px]`}>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
@@ -85,11 +86,11 @@ const HomePage = () => {
 
                         <div className="relative">
                             <div className='flex items-center w-[300px] hover:w-[300px]'>
-                                <button onClick={() => setPRD(!PRD) ? setPRD(PRD) : setPRD(!PRD)}
-                                    className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                                <Button onClick={() => setPRD(!PRD) ? setPRD(PRD) : setPRD(!PRD)}
+                                    className='text-black focus:text-white bg-[#82B3E8] hover:bg-[#91c1f6]  hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                     PRD
-                                </button>
-                                {PRD && <div className={`${PRD} absolute left-[145px] top-[-10px]`}>
+                                </Button>
+                                {PRD && <div className={`${PRD} absolute left-[145px] top-[-12px]`}>
                                     <ThreeArrows />
                                     <ShowData />
                                 </div>}
@@ -97,77 +98,77 @@ const HomePage = () => {
                         </div>
 
                         <div className='flex items-center w-[300px] hover:w-[300px] relative'>
-                            <button onClick={(e) => setSpecs(!specs) ? setSpecs(specs) : setSpecs(!specs)}
-                                className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                            <Button onClick={(e) => setSpecs(!specs) ? setSpecs(specs) : setSpecs(!specs)}
+                                className='text-black focus:text-white bg-[#82B3E8] hover:bg-[#91c1f6]  hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 Specs
-                            </button>
-                            {specs && <div className={`${specs} absolute left-[145px] top-[-10px]`}>
+                            </Button>
+                            {specs && <div className={`${specs} absolute left-[145px] top-[-12px]`}>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
                         </div>
 
                         <div className='flex items-center w-[300px] hover:w-[300px] relative'>
-                            <button onClick={() => setHardware(!hardware) ? setHardware(hardware) : setHardware(!hardware)}
-                                className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                            <Button onClick={() => setHardware(!hardware) ? setHardware(hardware) : setHardware(!hardware)}
+                                className='text-black focus:text-white bg-[#E96343] hover:bg-[#f3704f] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 Hardware
-                            </button>
-                            {hardware && <div className={`${hardware} absolute left-[145px] top-[-10px]`}>
+                            </Button>
+                            {hardware && <div className={`${hardware} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
                         </div>
 
                         <div className='flex items-center w-[300px] hover:w-[300px] relative'>
-                            <button onClick={() => setSoftware(!software) ? setSoftware(software) : setSoftware(!software)}
-                                className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                            <Button onClick={() => setSoftware(!software) ? setSoftware(software) : setSoftware(!software)}
+                                className='text-black focus:text-white bg-[#E96343] hover:bg-[#f3704f] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 Software
-                            </button>
-                            {software && <div className={`${software} absolute left-[145px] top-[-10px]`}>
+                            </Button>
+                            {software && <div className={`${software} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
                         </div>
 
                         <div className='flex items-center w-[300px] hover:w-[300px] relative'>
-                            <button onClick={(e) => setMaterial(!material) ? setMaterial(material) : setMaterial(!material)}
-                                className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                            <Button onClick={(e) => setMaterial(!material) ? setMaterial(material) : setMaterial(!material)}
+                                className='text-black focus:text-white bg-[#E8919D] hover:bg-[#eb9aa4] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 Material
-                            </button>
-                            {material && <div className={`${material} absolute left-[145px] top-[-10px]`}>
+                            </Button>
+                            {material && <div className={`${material} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
                         </div>
 
                         <div className='flex items-center w-[300px] hover:w-[300px] relative'>
-                            <button onClick={() => setProduction(!production) ? setProduction(production) : setProduction(!production)}
-                                className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                            <Button onClick={() => setProduction(!production) ? setProduction(production) : setProduction(!production)}
+                                className='text-black focus:text-white bg-[#E8919D] hover:bg-[#eb9aa4] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 Production
-                            </button>
-                            {production && <div className={`${production} absolute left-[145px] top-[-10px]`}>
+                            </Button>
+                            {production && <div className={`${production} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
                         </div>
 
                         <div className='flex items-center w-[300px] hover:w-[300px] relative'>
-                            <button onClick={() => setOnline(!online) ? setOnline(online) : setOnline(!online)}
-                                className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                            <Button onClick={() => setOnline(!online) ? setOnline(online) : setOnline(!online)}
+                                className='text-black focus:text-white bg-[#A684EB] hover:bg-[#ae8eed] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 Online
-                            </button>
-                            {online && <div className={`${online} absolute left-[145px] top-[-10px]`}>
+                            </Button>
+                            {online && <div className={`${online} absolute left-[145px] top-[-11px]`}>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
                         </div>
 
                         <div className='flex items-center w-[300px] hover:w-[300px] relative'>
-                            <button onClick={(e) => setDealearship(!dealearship) ? setDealearship(dealearship) : setDealearship(!dealearship)}
-                                className='focus:text-white bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
+                            <Button onClick={(e) => setDealearship(!dealearship) ? setDealearship(dealearship) : setDealearship(!dealearship)}
+                                className='text-black focus:text-white bg-[#A684EB] hover:bg-[#ae8eed] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>
                                 Dealearship
-                            </button>
-                            {dealearship && <div className={`${dealearship} absolute left-[145px] bottom-[-40px]`}>
+                            </Button>
+                            {dealearship && <div className={`${dealearship} absolute left-[145px] bottom-[52px]`}>
                                 <ThreeArrows />
                                 <ShowData />
                             </div>}
