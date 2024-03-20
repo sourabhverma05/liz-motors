@@ -5,7 +5,7 @@ import {
 import GroupImage from "/arrows-group.png";
 import TreeArrowGroup from "/three-arrows-group.png";
 import { Button } from './components/ui/button.jsx';
-import B2CItems from './components/b2c-items.jsx';
+import B2CItems from '@/components/b2c-items.jsx';
 import ThreeArrow from "/three-arrows-group.png"
 
 const HomePage = () => {

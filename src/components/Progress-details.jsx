@@ -1,5 +1,5 @@
 import React from 'react'
-import { Progress } from '../components/ui/progress.jsx'
+import { Progress } from '@/components/ui/progress'
 
 const ProgressDetailsBox = () => {
     return (
