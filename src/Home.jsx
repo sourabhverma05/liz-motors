@@ -4,8 +4,8 @@ import {
 } from "@/components/ui/tooltip.jsx"
 import GroupImage from "/arrows-group.png";
 import TreeArrowGroup from "/three-arrows-group.png";
-import { Button } from '/src/components/ui/button.jsx';
-import B2CItems from '/src/components/b2c-items.jsx';
+import { Button } from './components/ui/button.jsx';
+import B2CItems from './components/b2c-items.jsx';
 import ThreeArrow from "/three-arrows-group.png"
 
 const HomePage = () => {
@@ -25,7 +25,7 @@ const HomePage = () => {
             <TooltipProvider>
                 <div className='flex'>
                     <img src={GroupImage} className='h-[500px] my-auto' alt="#" />
-                    <div className="flex flex-col gap-[49px] justify-center">
+                    <div className="flex flex-col gap-[49px] justify-center text-center">
                         <div className={`flex items-center w-[300px]`}>
                             <p className='bg-[#3552aa] hover:text-white tracking-wide py-3 px-3 text-sm font-medium rounded-sm w-[150px]'>Research</p>
                             <div className='flex items-center'>
