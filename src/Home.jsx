@@ -5,11 +5,11 @@ import {
 import GroupImage from "/arrows-group.png";
 import TreeArrowGroup from "/three-arrows-group.png";
 import { Button } from './components/ui/button.jsx';
-import B2CItems from '@/components/b2c-items.jsx';
+import B2CItems from '@/components/bc-items.jsx';
 import ThreeArrow from "/three-arrows-group.png"
 
 const HomePage = () => {
-    const [external, setExternal] = useState(`hidden`);
+    const [external, setExternal] = useState(`hidden`)
     const [internal, setInternal] = useState(`hidden`);
     const [PRD, setPRD] = useState(`hidden`);
     const [specs, setSpecs] = useState(`hidden`);
@@ -68,9 +68,9 @@ const HomePage = () => {
                                 External
                             </Button>
                             {external && <div className={`${external} absolute left-[145px] top-[-14px]`}>
-                            <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                <div className='flex items-center'>
+                                    <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                </div>
                                 <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                     <B2CItems />
                                     <B2CItems />
@@ -84,9 +84,9 @@ const HomePage = () => {
                                 Internal
                             </Button>
                             {internal && <div className={`${internal} absolute left-[145px] top-[-13px]`}>
-                            <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                <div className='flex items-center'>
+                                    <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                </div>
                                 <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                     <B2CItems />
                                     <B2CItems />
@@ -101,9 +101,9 @@ const HomePage = () => {
                                     PRD
                                 </Button>
                                 {PRD && <div className={`${PRD} absolute left-[145px] top-[-12px]`}>
-                                         <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                    <div className='flex items-center'>
+                                        <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                    </div>
                                     <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                         <B2CItems />
                                         <B2CItems />
@@ -118,9 +118,9 @@ const HomePage = () => {
                                 Specs
                             </Button>
                             {specs && <div className={`${specs} absolute left-[145px] top-[-12px]`}>
-                                     <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                <div className='flex items-center'>
+                                    <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                </div>
                                 <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                     <B2CItems />
                                     <B2CItems />
@@ -134,9 +134,9 @@ const HomePage = () => {
                                 Hardware
                             </Button>
                             {hardware && <div className={`${hardware} absolute left-[145px] top-[-11px]`}>
-                                     <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                <div className='flex items-center'>
+                                    <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                </div>
                                 <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                     <B2CItems />
                                     <B2CItems />
@@ -150,9 +150,9 @@ const HomePage = () => {
                                 Software
                             </Button>
                             {software && <div className={`${software} absolute left-[145px] top-[-11px]`}>
-                                     <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                <div className='flex items-center'>
+                                    <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                </div>
                                 <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                     <B2CItems />
                                     <B2CItems />
@@ -166,9 +166,9 @@ const HomePage = () => {
                                 Material
                             </Button>
                             {material && <div className={`${material} absolute left-[145px] top-[-11px]`}>
-                                     <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                <div className='flex items-center'>
+                                    <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                </div>
                                 <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                     <B2CItems />
                                     <B2CItems />
@@ -182,9 +182,9 @@ const HomePage = () => {
                                 Production
                             </Button>
                             {production && <div className={`${production} absolute left-[145px] top-[-11px]`}>
-                                     <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                <div className='flex items-center'>
+                                    <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                </div>
                                 <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                     <B2CItems />
                                     <B2CItems />
@@ -198,9 +198,9 @@ const HomePage = () => {
                                 Online
                             </Button>
                             {online && <div className={`${online} absolute left-[145px] top-[-11px]`}>
-                                     <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                <div className='flex items-center'>
+                                    <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                </div>
                                 <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                     <B2CItems />
                                     <B2CItems />
@@ -214,9 +214,9 @@ const HomePage = () => {
                                 Dealearship
                             </Button>
                             {dealearship && <div className={`${dealearship} absolute left-[145px] bottom-[52px]`}>
-                                     <div className='flex items-center'>
-            <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
-        </div>
+                                <div className='flex items-center'>
+                                    <img src={ThreeArrow} className={`w-[150px] h-[65px]`} alt="#" />
+                                </div>
                                 <div className='flex flex-col gap-y-2 w-[20%] -mt-[80px] ms-[148px]'>
                                     <B2CItems />
                                     <B2CItems />
