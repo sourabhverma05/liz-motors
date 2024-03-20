@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import {
     TooltipProvider,
-} from "@/components/ui/tooltip"
+} from "@/components/ui/tooltip.jsx"
 import GroupImage from "/arrows-group.png";
 import TreeArrowGroup from "/three-arrows-group.png";
 import { Button } from '/src/components/ui/button.jsx';
-import B2CItems from '/src/components/b2c-items';
+import B2CItems from '/src/components/b2c-items.jsx';
 import ThreeArrow from "/three-arrows-group.png"
 
 const HomePage = () => {
