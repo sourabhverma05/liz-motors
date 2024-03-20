@@ -1,7 +1,7 @@
-import React from 'react'
-import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu.jsx'
-import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip.jsx'
-import ProgressDetailsBox from './progress-details.jsx'
+import React from 'react';
+import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuSeparator, DropdownMenuTrigger } from './ui/dropdown-menu.jsx';
+import { Tooltip, TooltipContent, TooltipTrigger } from './ui/tooltip.jsx';
+import ProgressDetailsBox from './progress-details.jsx';
 
 
 const B2CItems = () => {
